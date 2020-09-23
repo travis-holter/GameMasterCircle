@@ -13,7 +13,7 @@ export default () => {
         <Route path="/" component={MainNavContainer} />
         <Route exact path="/" component={Home} />
         {/* <Route path="/signup" component={SignupContainer} /> */}
-        <Route path="/login" component={SigninContainer} />
+        <AuthRoute path="/login" component={SigninContainer} />
         <AuthRoute path="/signup" component={SignupContainer} />
     </div>
     )
