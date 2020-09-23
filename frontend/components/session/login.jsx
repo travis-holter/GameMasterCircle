@@ -21,10 +21,25 @@ class Signin extends React.Component {
         this.props.processForm(this.state);
     }
 
+    errors() {
+        return (
+            <div>
+                {
+                    this.props.errors.map((error, idx) => (
+                        <p className="error-li" key={idx}>
+                            {error}
+                        </p>
+                    ))
+                }
+            </div>
+        )
+    }
+
     render() {
         return (
             <div className="session-form">
                 <h2>Log In!</h2>
+                {this.errors()}
                 <form>
                     <label>Username:
                         <input type="text"

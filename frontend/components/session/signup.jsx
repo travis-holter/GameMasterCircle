@@ -26,6 +26,7 @@ class Signup extends React.Component {
         return (
             <div className="session-form">
                 <h2>Sign Up!</h2>
+                {this.state.errors}
                 <form>
                     <label>Username:
                         <input type="text"

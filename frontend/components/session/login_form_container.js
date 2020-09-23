@@ -4,8 +4,9 @@ import SignIn from './login';
 import { Link } from 'react-router-dom';
 import { login } from "../../actions/session";
 
-const mSTP = ({ errors }) => {
+const mSTP = (state) => {
     return {
+        errors: state.errors,
         formType: 'login',
         navLink: <Link to="/signup">Sign Up</Link>,
     };
