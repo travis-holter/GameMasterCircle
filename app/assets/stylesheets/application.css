@@ -14,13 +14,45 @@
  *= require_self
  */
 
+ 
+ .btn-blue {
+     align-self: flex-end;
+     color:white;
+     background-color: blue;
+     padding: 3px;
+     border-radius: 3px;
+    }
+    
+.btn {
+        align-self: flex-end;
+        color:white;
+        background-color: gray;
+        padding: 3px;
+        border-radius: 3px;
+    }
+    
 .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+.nav-logo {
+    width: 43px;
+    height: 43px;
+   }
+
+.nav-parent {
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-
+.btn-parent {
+    display: flex;
+    flex-direction: row;
+}
 
 
 
