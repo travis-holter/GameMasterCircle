@@ -43,7 +43,7 @@ class Signup extends React.Component {
             <>
             <img
                 className="background-img"
-                src="/assets/yellow.png"
+                src={window.yellowURL}
             />
             <div className="session-form">
                 <div className="errors-txt">{this.errors()}</div>

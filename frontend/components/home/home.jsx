@@ -5,7 +5,7 @@ export default () => (
         <h1></h1>
         <img
             className="background-img"
-            src="/assets/yellow.png"
+            src={window.yellowURL}
         />
         <div className="welcome-msg">
             <h1>We {'<'}3 people who run games!</h1>
