@@ -66,6 +66,7 @@
 }
 
 .session-form {
+    background-color: gray;
     border-radius: 3px;
     padding: 10px;
     position: fixed;
