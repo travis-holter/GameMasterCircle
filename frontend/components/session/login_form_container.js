@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import SignIn from './login';
 import { Link } from 'react-router-dom';
-import { login } from "../../actions/session";
+import { login, clearErrors } from "../../actions/session";
 
 const mSTP = (state) => {
     return {
@@ -15,6 +15,7 @@ const mSTP = (state) => {
 const mDTP = dispatch => {
     return {
         processForm: (user) => dispatch(login(user)),
+        clearErrors: () => dispatch(clearErrors())
     };
 };
 

@@ -108,3 +108,7 @@ label {
     display: flex;
     flex-direction: column;
 }
+
+.errors-txt {
+    color: red;
+}
