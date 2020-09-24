@@ -39,6 +39,11 @@ class Signin extends React.Component {
 
     render() {
         return (
+            <>
+            <img
+                className="background-img"
+                src="/assets/yellow.png"
+            />
             <div className="session-form">
                 <div className="errors-txt">{this.errors()}</div>
                 <form className="session-form-form">
@@ -59,6 +64,7 @@ class Signin extends React.Component {
                     <button onClick={this.handleSubmit}>Log In</button>
                 </form>
             </div>
+            </>
         );
     }
 };

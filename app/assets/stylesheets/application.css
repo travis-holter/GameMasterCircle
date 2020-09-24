@@ -56,20 +56,18 @@
 }
 
 .btn-parent {
-
     display: flex;
     flex-direction: row;
 }
 
 .background-img {
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
 .session-form {
     border-radius: 3px;
     padding: 10px;
-    /* background-color: gray; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -78,7 +76,6 @@
 }
 
 .welcome-msg {
-    /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
     border-radius: 3px;

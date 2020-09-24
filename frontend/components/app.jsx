@@ -11,10 +11,10 @@ export default () => {
     return(
     <div>
         <Route path="/" component={MainNavContainer} />
-        <Route exact path="/" component={Home} />
         {/* <Route path="/signup" component={SignupContainer} /> */}
         <AuthRoute path="/login" component={SigninContainer} />
         <AuthRoute path="/signup" component={SignupContainer} />
+        <Route exact path="/" component={Home} />
     </div>
     )
 };

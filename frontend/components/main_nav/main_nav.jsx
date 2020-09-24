@@ -9,10 +9,12 @@ export default ({ currentUser, logout }) => {
         </>
     ) : (
                 <div className="nav-parent">
+                    <a href="/">
                     <img 
                         className="nav-logo"
                         src="/assets/stackicon.png"
                     />
+                    </a>
                     <div className="btn-parent">
                         <Link className="btn" to="/login">Log In</Link>
                         <Link className="btn-blue" to="/signup">Sign Up</Link>
