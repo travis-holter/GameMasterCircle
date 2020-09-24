@@ -8,11 +8,11 @@ export default ({ currentUser, logout }) => {
             <div>
             <a href="/">
                 <img className="nav-logo"
-                    src="/assets/stackicon.png"
+                    src={window.stackiconURL}
                 />
             </a>
             <img className="nav-logo"
-            src="/assets/wizard.jpg"
+            src={window.wizardURL}
             />
             </div>
             <div className="btn-parent">
@@ -26,7 +26,7 @@ export default ({ currentUser, logout }) => {
                 <div className="nav-parent">
                     <a href="/">
                     <img className="nav-logo"
-                        src="/assets/stackicon.png"
+                        src={window.stackiconURL}
                     />
                     </a>
                     <div className="btn-parent">
