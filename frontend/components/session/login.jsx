@@ -38,22 +38,23 @@ class Signin extends React.Component {
     render() {
         return (
             <div className="session-form">
-                <h2>Log In!</h2>
                 {this.errors()}
-                <form>
-                    <label>Username:
+                <form className="session-form-form">
+                    <label>Username
                         <input type="text"
                             value={this.state.username}
                             onChange={this.handleInput('username')}
                         />
                     </label>
-                    <label>Password:
+                    <br />
+                    <label>Password
                         <input type="password"
                             value={this.state.password}
                             onChange={this.handleInput('password')}
                         />
                     </label>
-                    <button onClick={this.handleSubmit}>Sign In</button>
+                    <br />
+                    <button onClick={this.handleSubmit}>Log In</button>
                 </form>
             </div>
         );

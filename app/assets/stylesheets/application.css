@@ -16,6 +16,7 @@
 
  
  .btn-blue {
+     right: 10;
      align-self: flex-end;
      color:white;
      background-color: blue;
@@ -55,6 +56,7 @@
 }
 
 .btn-parent {
+
     display: flex;
     flex-direction: row;
 }
@@ -62,4 +64,47 @@
 .background-img {
     width: 100%;
     height: auto;
+}
+
+.session-form {
+    border-radius: 3px;
+    padding: 10px;
+    /* background-color: gray; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.welcome-msg {
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.questions-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: orange;
+    color: white;
+    align-self: center;
+}
+
+.session-form-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
 }
