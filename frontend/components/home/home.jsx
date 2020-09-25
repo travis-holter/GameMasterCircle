@@ -1,16 +1,42 @@
 import React from 'react';
 
-export default () => (
-    <div className="home">
-        <h1></h1>
-        <img
-            className="background-img"
-            src={window.yellowURL}
-        />
-        <div className="welcome-msg">
-            <h1>We {'<'}3 people who run games!</h1>
-            <p>We help game masters connect to share resources and wisdom.</p>
-            <button className="questions-btn">See what people are talking about now!</button>
+class Home extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            username: "demo",
+            password: "demo12",
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+    };
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.props.processForm(this.state);
+    }
+
+    render() {
+        return (
+        <div className="home">
+            <h1></h1>
+            <img
+                className="background-img"
+                src={window.yellowURL}
+            />
+            <div className="welcome-msg">
+                <h1>We {'<'}3 people who run games!</h1>
+                <p>We help game masters connect to share resources and wisdom.</p>
+                <div className="welcome-btn-div">
+                    <button className="demo-btn"
+                            onClick={this.handleSubmit}
+                    >Log in as a demo user</button>
+                    <button className="questions-btn">See what people are talking about now!</button>
+                </div>
+            </div>
         </div>
-    </div>
-)
+        )
+}
+
+}
+
+export default Home;

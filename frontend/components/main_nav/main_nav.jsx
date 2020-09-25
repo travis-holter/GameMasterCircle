@@ -16,9 +16,7 @@ export default ({ currentUser, logout }) => {
             />
             </div>
             <div className="btn-parent">
-                <button onClick={logout}>Log Out</button>
-                <Link className="btn" to="/login">Log In</Link>
-                <Link className="btn-blue" to="/signup">Sign Up</Link>
+                <button className="btn" onClick={logout}>Log Out</button>
             </div>
         </div>
         </>
