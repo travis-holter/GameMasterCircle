@@ -40,9 +40,11 @@ export default ({ currentUser, logout }) => {
                                 src={window.stackiconURL}
                             />
                         </a>
-                        <img className="logo"
-                            src={window.logoURL}
-                        />
+                        <a href="/">
+                            <img className="logo"
+                                src={window.logoURL}
+                            />
+                        </a>
                         <a href="http://www.linkedin.com/in/travis-holter-5376771b8">
                             <img
                                 className="linkedin-logo"
