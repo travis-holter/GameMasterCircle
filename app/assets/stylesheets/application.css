@@ -137,6 +137,11 @@ input[type="submit"] {
     height: 43px;
 }
 
+.logo {
+    width: 307px;
+    height: 43px;
+}
+
 .nav-parent {
     width: 100vw;
     display: flex;
