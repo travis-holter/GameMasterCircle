@@ -8,7 +8,7 @@ class AllQuestionsIndex extends React.Component {
     render() {
         return (
             <div>
-                <p>Questions go here!</p>
+                <p className="demo-txt">Questions go here!</p>
             </div>
         )
     }

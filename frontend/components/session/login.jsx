@@ -22,7 +22,8 @@ class Signin extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state);
+        this.props.processForm(this.state)
+        .then(() => this.props.history.push('./questions'));
     }
 
     errors() {

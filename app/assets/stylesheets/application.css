@@ -198,6 +198,7 @@ input[type="submit"] {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    align-items: center;
 }
 
 .questions-btn {
@@ -205,9 +206,25 @@ input[type="submit"] {
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
-    background-color: orange;
-    color: white;
+    background-color: #f48024;
+    color: #fff;
     align-self: center;
+    width: 140px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.demo-btn {
+    width: 140px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #fff;
+    color: #f48024;
+    border-color: #f48024;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 .session-form-form {
@@ -225,8 +242,10 @@ label {
 }
 
 .welcome-btn-div {
+    width: 300px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .session-text {
@@ -296,4 +315,12 @@ label {
     font-size: 12px;
     margin-top: 4px;
     margin-bottom: 4px;
+}
+
+/* -------------------------- questions page ---------------- */
+
+.demo-txt {
+    position: fixed;
+    top: 100px;
+    font-size: 500%;
 }

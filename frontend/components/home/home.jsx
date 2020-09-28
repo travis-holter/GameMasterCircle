@@ -8,11 +8,18 @@ class Home extends React.Component {
             password: "demo12",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     };
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state);
+        this.props.processForm(this.state)
+        .then(() => this.props.history.push('./questions'));
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+        this.props.history.push('/questions');
     }
 
     render() {
@@ -30,7 +37,9 @@ class Home extends React.Component {
                     <button className="demo-btn"
                             onClick={this.handleSubmit}
                     >Log in as a demo user</button>
-                    <button className="questions-btn">See what people are talking about now!</button>
+                    <button className="questions-btn"
+                        onClick={this.handleClick}
+                    >Look at questions</button>
                 </div>
             </div>
         </div>
