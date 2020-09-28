@@ -66,7 +66,7 @@ input[type="submit"] {
    margin: 0;
  }
 /* -------------------------------------------------- */
-/* nav-bar  */
+/* buttons ---------------------- */
 
 
  .btn-blue {
@@ -114,6 +114,8 @@ input[type="submit"] {
     color: #2c5777;
     background: #f2f9ff;
 }
+
+/* nav-bar  -------------------------------*/
 
 .nav-bar {
         display: flex;
@@ -173,8 +175,10 @@ input[type="submit"] {
     height: 500px;
 }
 
+/* ------------- session forms ------------ */
+
 .session-form {
-    background-color: gray;
+    background-color: #FFFFFF;
     border-radius: 3px;
     padding: 10px;
     position: fixed;
@@ -223,4 +227,73 @@ label {
 .welcome-btn-div {
     display: flex;
     flex-direction: row;
+}
+
+.session-text {
+    color: #0c0d0e;
+    font-weight: 700;
+    font: helvetica;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.session-field {
+    padding: .6em .7em;
+    border: 1px solid #66c0c4;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #0c0d0e;
+}
+
+.session-btn {
+        align-self: center;
+        color:#39739d;
+        background-color: #e1ecf4;
+        border-color: #7aa7c7;
+        outline: none;
+        box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+        padding: .8em;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-size: 13px;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        margin-right: 7px;
+    }
+
+.session-btn:hover {
+    color: #2c5777;
+    background: #f2f9ff;
+}
+
+ .session-btn-blue {
+     align-self: center;
+     color:#fff;
+     background-color:#0095ff;
+     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+     padding: .8em;
+     border: 1px solid transparent;
+     margin-right: 7px;
+     border-radius: 3px;
+     font-size: 13px;
+     text-align: center;
+     cursor: pointer;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     text-decoration: none;
+    }
+    
+.session-btn-blue:hover {
+    color: #fff;
+    background-color: #0077cc;
+}
+
+.password-txt {
+    color: #6a737c;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }

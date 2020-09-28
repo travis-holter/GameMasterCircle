@@ -48,28 +48,34 @@ class Signup extends React.Component {
             <div className="session-form">
                 <div className="errors-txt">{this.errors()}</div>
                 <form className="session-form-form">
-                    <label>Username
-                        <input type="text"
+                    <label className="session-text">Username
+                        <input className="session-field"
+                            type="text"
                             value={this.state.username}
                             onChange={this.handleInput('username')}
                         />
                     </label>
                     <br />
-                    <label>Email
-                        <input type="text"
+                    <label className="session-text">Email
+                        <input className="session-field"
+                            type="text"
                             value={this.state.email}
                             onChange={this.handleInput('email')}
                         />
                     </label>
                     <br />
-                    <label>Password
-                        <input type="password"
+                    <label className="session-text">Password
+                        <input className="session-field"
+                            type="password"
                             value={this.state.password}
                             onChange={this.handleInput('password')}
                         />
                     </label>
+                    <p className="password-txt">Passwords must contain at least six characters.</p>
                     <br />
-                    <button onClick={this.handleSubmit}>Sign Up</button>
+                    <button className="session-btn-blue" 
+                        onClick={this.handleSubmit}>Sign Up
+                    </button>
                 </form>
             </div>
             </>

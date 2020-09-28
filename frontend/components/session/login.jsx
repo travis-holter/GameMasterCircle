@@ -47,21 +47,25 @@ class Signin extends React.Component {
             <div className="session-form">
                 <div className="errors-txt">{this.errors()}</div>
                 <form className="session-form-form">
-                    <label>Username
-                        <input type="text"
+                    <label className="session-text">Username
+                        <input className="session-field"
+                            type="text"
                             value={this.state.username}
                             onChange={this.handleInput('username')}
                         />
                     </label>
                     <br />
-                    <label>Password
-                        <input type="password"
+                    <label className="session-text">Password
+                        <input className="session-field"
+                            type="password"
                             value={this.state.password}
                             onChange={this.handleInput('password')}
                         />
                     </label>
                     <br />
-                    <button onClick={this.handleSubmit}>Log In</button>
+                    <button className="session-btn" 
+                        onClick={this.handleSubmit}>Log In
+                    </button>
                 </form>
             </div>
             </>
