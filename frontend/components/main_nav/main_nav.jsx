@@ -20,6 +20,12 @@ export default ({ currentUser, logout }) => {
                         src={window.linkedinURL}
                     />
                 </a>
+                <a href="http://github.com/travis-holter">
+                    <img
+                        className="github-logo"
+                        src={window.githubURL}
+                    />
+                </a>
             </div>
             <div className="btn-parent">
                 <button className="btn" onClick={logout}>Log Out</button>
@@ -41,6 +47,12 @@ export default ({ currentUser, logout }) => {
                             <img
                                 className="linkedin-logo"
                                 src={window.linkedinURL}
+                            />
+                        </a>
+                        <a href="http://github.com/travis-holter">
+                            <img
+                                className="github-logo"
+                                src={window.githubURL}
                             />
                         </a>
                     </div>
