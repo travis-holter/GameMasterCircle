@@ -9,10 +9,20 @@ class Signup extends React.Component {
             password: "",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
     }
 
     componentWillUnmount() {
         this.props.clearErrors()
+    }
+
+    handleLogin(e) {
+        e.preventDefault();
+        this.props.login({
+            username: "demo",
+            password: "demo12",
+        })
+        .then(() => this.props.history.push('./questions'));
     }
 
     handleInput(type) {
@@ -44,11 +54,29 @@ class Signup extends React.Component {
             <>
             <img
                 className="background-img"
-                src={window.yellowURL}
+                src={window.heroURL}
             />
             <div className="session-form">
-                <div className="errors-txt">{this.errors()}</div>
+                <div className="side-info">
+                    <p>Join the Game Master Circle community!</p>
+                    <div className="side-info-item">
+                        <img className="side-info-img"
+                            src={window.chatURL}></img>
+                        <p>Ask a question</p>
+                    </div>
+                    <div className="side-info-item">
+                        <img className="side-info-img"
+                            src={window.voteURL}></img>
+                        <p>Vote and answer questions</p>
+                    </div>
+                    <div className="side-info-item">
+                        <img className="side-info-img"
+                            src={window.seedlingURL}></img>
+                        <p>Grow your skills</p>
+                    </div>
+                </div>
                 <form className="session-form-form">
+                    <div className="errors-txt">{this.errors()}</div>
                     <label className="session-text">Username
                         <input className="session-field"
                             type="text"
@@ -74,9 +102,15 @@ class Signup extends React.Component {
                     </label>
                     <p className="password-txt">Passwords must contain at least six characters.</p>
                     <br />
-                    <button className="session-btn-blue" 
-                        onClick={this.handleSubmit}>Sign Up
-                    </button>
+                    <div className="signup-btns">
+                        <button className="session-btn-blue" 
+                            onClick={this.handleSubmit}>Sign Up
+                        </button>
+                        <button className="btn-green"
+                        onClick={this.handleLogin}>
+                            Log In as Demo User
+                        </button>
+                    </div>
                 </form>
             </div>
             </>

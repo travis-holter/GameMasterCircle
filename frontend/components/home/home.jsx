@@ -28,7 +28,7 @@ class Home extends React.Component {
             <h1></h1>
             <img
                 className="background-img"
-                src={window.yellowURL}
+                src={window.heroURL}
             />
             <div className="welcome-msg">
                 <h1>We {'<'}3 people who run games!</h1>

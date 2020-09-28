@@ -8,11 +8,21 @@ class Signin extends React.Component {
             password: "",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
     }
 
     componentWillUnmount(){
         this.props.clearErrors()
     }
+
+    handleLogin(e) {
+        e.preventDefault();
+        this.props.login({
+            username: "demo",
+            password: "demo12",
+        })
+            .then(() => this.props.history.push('./questions'));
+    };
 
     handleInput(type) {
         return (e) => {
@@ -64,9 +74,15 @@ class Signin extends React.Component {
                         />
                     </label>
                     <br />
-                    <button className="session-btn" 
-                        onClick={this.handleSubmit}>Log In
-                    </button>
+                    <div className="login-btns">
+                        <button className="session-btn" 
+                            onClick={this.handleSubmit}>Log In
+                        </button>
+                        <button className="btn-green"
+                                onClick={this.handleLogin}>
+                                Log In as Demo User
+                        </button>
+                    </div>
                 </form>
             </div>
             </>
