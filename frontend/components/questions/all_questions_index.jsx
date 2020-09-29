@@ -5,10 +5,20 @@ class AllQuestionsIndex extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        this.props.fetchQuestions();
+    }
+
     render() {
+        if(!this.props.questions) return null;
         return (
-            <div>
-                <p className="demo-txt">Questions go here!</p>
+            <div className='questions-index'>
+                    {this.props.questions.map(question => {
+                        return(<>
+                        <h3>{question.title}</h3>
+                        <p>{question.body}</p>
+                        </>)
+                    })}
             </div>
         )
     }

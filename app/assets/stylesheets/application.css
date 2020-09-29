@@ -87,10 +87,3 @@ input[type="submit"] {
     font-size: 21px;
 }
 
-/* -------------------------- questions page ---------------- */
-
-.demo-txt {
-    position: fixed;
-    top: 100px;
-    font-size: 500%;
-}

@@ -17,4 +17,7 @@ users = User.create!([
 
 questions = Question.create!([
     {title: "Should I let my players have an 'alchemy jug'?", body: "I am worried that they will just use it to make a bunch of mayonaise.", author_id: 1},
+    {title: "What should I do with my problem player?", body: "I have this guy who keeps a live chicken in his shirt, I've been thinking about kicking him out. What do my peeps think?", author_id: 2},
+    {title: "What question should I ask as a demo user?", body: "I just clicked the green button and now I am in. I have always been currious about D&D, but truthfully I am just someone checking out this website. So far, I think it's pretty rad.", author_id: 3},
+    {title: "My name is Nick and I like to ask questions.", body: "I know that wasn't a question, this is just the kind of person I am.", author_id: 2},
 ])
