@@ -51,10 +51,6 @@ class Signin extends React.Component {
     render() {
         return (
             <>
-            <img
-                className="background-img"
-                src={window.yellowURL}
-            />
             <div className="session-form">
                 <div className="errors-txt">{this.errors()}</div>
                 <form className="session-form-form">

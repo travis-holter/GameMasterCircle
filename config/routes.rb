@@ -4,5 +4,8 @@ Rails.application.routes.draw do
     resources :users
     resource :session, only: [:create, :destroy]
   end
+
+  resources :questions, only: [:index]
+
   root to: 'static_pages#root'
 end

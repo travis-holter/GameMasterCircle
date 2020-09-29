@@ -31,8 +31,8 @@ class Home extends React.Component {
                 src={window.heroURL}
             />
             <div className="welcome-msg">
-                <h1>We {'<'}3 people who run games!</h1>
-                <p>We help game masters connect to share resources and wisdom.</p>
+                <h1 className="home-txt-big">We {'<'}3 people who run games!</h1>
+                <p className="home-txt-small">We help game masters connect to share resources and wisdom.</p>
                 <div className="welcome-btn-div">
                     <button className="demo-btn"
                             onClick={this.handleSubmit}

@@ -52,10 +52,6 @@ class Signup extends React.Component {
     render() {
         return (
             <>
-            <img
-                className="background-img"
-                src={window.heroURL}
-            />
             <div className="session-form">
                 <div className="side-info">
                     <p>Join the Game Master Circle community!</p>
