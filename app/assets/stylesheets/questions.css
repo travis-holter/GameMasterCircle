@@ -1,5 +1,32 @@
 
-.questions-index {
+.questions-page {
     position: fixed;
-    top: 100px;
+    top: 47px;
+    display: flex;
+    flex-direction: row;
+}
+
+.question-index-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid #d6d9dc;
+    border-bottom: 1px; */
+}
+
+.questions-index {
+    background-color: #fff;
+    border: 1px solid #d6d9dc;
+    border-bottom: 1px;
+    padding: 24px;
+}
+
+.top-questions{
+    font: helvetica;
+    font-size: 27px;
+}
+
+.question-list {
+    list-style-type: none;
 }

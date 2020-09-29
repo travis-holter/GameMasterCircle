@@ -1,4 +1,6 @@
 import React from 'react';
+import SideBar from '../sidebar/sidebar';
+import QuestionItem from './question_item';
 
 class AllQuestionsIndex extends React.Component {
     constructor(props){
@@ -12,13 +14,22 @@ class AllQuestionsIndex extends React.Component {
     render() {
         if(!this.props.questions) return null;
         return (
-            <div className='questions-index'>
-                    {this.props.questions.map(question => {
-                        return(<>
-                        <h3>{question.title}</h3>
-                        <p>{question.body}</p>
-                        </>)
-                    })}
+            <div className='questions-page'>
+                <SideBar />
+                <div className='questions-index'>
+                        <div className='question-index-top'>
+                            <h1 className='top-questions'>Top Questions</h1>
+                            <button className='btn-blue'>Ask Question</button>
+                        </div>
+                        <ul className='question-list'>
+                            {this.props.questions.map(question => {
+                                return(
+                                    <QuestionItem question={question}
+                                    key={question.id}/>
+                                )
+                            })}
+                        </ul>
+                </div>
             </div>
         )
     }

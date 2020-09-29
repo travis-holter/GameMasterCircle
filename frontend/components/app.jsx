@@ -6,7 +6,7 @@ import HomeContainer from './home/home_container';
 import AllQuestionsIndexContainer from './questions/all_questions_items_container';
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from "../utils/route_utils"
-import GreetingContainer from './greeting/greeting_container';
+
 
 export default () => {
     return(

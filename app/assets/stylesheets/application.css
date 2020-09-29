@@ -60,6 +60,9 @@ input[type="submit"] {
   cursor: pointer;
 } */
 
+h1 {
+  font: inherit;
+}
 
  html, body, div {
    padding: 0;
