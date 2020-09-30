@@ -12,7 +12,7 @@ Question.destroy_all
 users = User.create!([
     {username: "dagobb", email: "email@email.com", password: 'hunter12'},
     {username: "bearman", email: "dude@dude.com", password: 'potato'},
-    {username: "demo", email: "demo@demo.com", password: 'demo12'}
+    {username: "demo", email: "demo@demo.com", password: 'demo12'},
     {username: "nemo", email: "nemo@nemo.com", password: 'nemo12'},
 ])
 
