@@ -1,0 +1,32 @@
+.question-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-item-div {
+    display: flex;
+    flex-direction: column;
+    min-width: 44px;
+    padding: 6px;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+.gray-txt {
+    font: helvetica;
+    font-size: 12px;
+    color: #9199a1;
+    
+}
+
+.little-gray-txt {
+    font: helvetica;
+    font-size: 11px;
+    color: #848d95;
+}
+
+.number-gray-txt {
+    font: helvetica;
+    font-size: 17px;
+    color: #848d95;
+}

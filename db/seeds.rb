@@ -13,6 +13,7 @@ users = User.create!([
     {username: "dagobb", email: "email@email.com", password: 'hunter12'},
     {username: "bearman", email: "dude@dude.com", password: 'potato'},
     {username: "demo", email: "demo@demo.com", password: 'demo12'}
+    {username: "nemo", email: "nemo@nemo.com", password: 'nemo12'},
 ])
 
 questions = Question.create!([
@@ -20,4 +21,10 @@ questions = Question.create!([
     {title: "What should I do with my problem player?", body: "I have this guy who keeps a live chicken in his shirt, I've been thinking about kicking him out. What do my peeps think?", author_id: 2},
     {title: "What question should I ask as a demo user?", body: "I just clicked the green button and now I am in. I have always been currious about D&D, but truthfully I am just someone checking out this website. So far, I think it's pretty rad.", author_id: 3},
     {title: "My name is Nick and I like to ask questions.", body: "I know that wasn't a question, this is just the kind of person I am.", author_id: 2},
+    {title: "Can a fish be a GM?", body: "I've wanted to run games since I was caviar, is it ok to GM when you have gills?", author_id: 4},
+    {title: "Ok, what does everyone think of my new world?", body: "I call it Mistworld! It was weight-lifting bro-raptors, and it is generally insane. Also my main villiage is named 'Karaoke Villiage', a lot of creativity went into it. ", author_id: 1},
+    {title: "Bro, do you even practice voices?", body: "My morning routine involves singing in the mirror. What do you do?", author_id: 2},
+    {title: "Can Travis build awesome websites?", body: "Yes, yes he can. I think I will hire him right away :D", author_id: 3},
+
+
 ])
