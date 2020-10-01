@@ -26,3 +26,8 @@ export const fetchQuestion = questionId => dispatch => {
             .then(question => dispatch(receiveQuestion(question)))
     )
 };
+
+export const createQuestion = (question) => (dispatch) => {
+    return QuestionApiUtil.createQuestion(question)
+        .then(createdQuestion => dispatch(receiveQuestion(createdQuestion)))
+};
