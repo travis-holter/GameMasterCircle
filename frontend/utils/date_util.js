@@ -42,12 +42,17 @@ export const timeAgo = date => {
             `${current.getFullYear() - old.getFullYear()} years`
         )
     }
-    if(old.getMonth() < current.getMonth()){
-        return(
-            `${current.getMonth() - old.getMonth()} months`
-        )
-    }
+    // if(old.getMonth() < current.getMonth()){
+    //     return(
+    //         `${current.getMonth() - old.getMonth()} months`
+    //     )
+    // }
     if (old.getDay() < current.getDay()) {
+        if (current.getDay() - old.getDay() === 1){
+            return(
+                `${current.getDay() - old.getDay()} day`
+            )
+        }
         return (
             `${current.getDay() - old.getDay()} days`
         )

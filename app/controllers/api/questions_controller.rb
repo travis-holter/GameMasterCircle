@@ -1,5 +1,7 @@
 class Api::QuestionsController < ApplicationController
 
+    before_action :require_logged_in, only: [:create]
+
     def index
         @questions = Question.all
         render :index
@@ -8,6 +10,16 @@ class Api::QuestionsController < ApplicationController
     def show
         @question = Question.find(params[:id])
         render :show
+    end
+
+    def create
+        @question = Question.new(question_params)
+        @question.author_id = current_user.id
+        if @question.save
+            render :show
+        else
+            render json: @question.errors.full_messages, status: 422
+        end
     end
 
     private
