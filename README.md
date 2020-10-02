@@ -19,7 +19,7 @@ The latest working version is hosted live on heroku. [Click here to check it out
 
 # Splah Page
 
-https://raw.githubusercontent.com/travis-holter/GameMasterCircle/master/.github/images/splash.png
+
 
 # README
 
