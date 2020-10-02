@@ -19,7 +19,7 @@ The latest working version is hosted live on heroku. [Click here to check it out
 
 # Splah Page
 
-
+![splash](https://user-images.githubusercontent.com/53350595/94932095-737e1d00-047d-11eb-897e-a57ceab2da54.png)
 
 # README
 
