@@ -1,0 +1,40 @@
+.modal-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-label {
+    font-size: 15px;
+    font: helvetica;
+    color: #0C0D0E;
+}
+
+.small-modal-label {
+    font-size: 12px;
+    font: helvetica;
+    color: #3C4146;
+}
+
+.title-input {
+    width: 100%;
+    padding: .6em .7em;
+    border: 1px solid #bbc0c4;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #0c0d0e;
+    font-size: 13px;
+}
+
+.modal-body {
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #bbc0c4;
+}
+
+.modal-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

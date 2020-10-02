@@ -28,6 +28,6 @@ export const fetchQuestion = questionId => dispatch => {
 };
 
 export const createQuestion = (question) => (dispatch) => {
-    return QuestionApiUtil.createQuestion(question)
-        .then(createdQuestion => dispatch(receiveQuestion(createdQuestion)))
+    return APIUtil.createQuestion(question)
+        .then(question => dispatch(receiveQuestion(question)))
 };

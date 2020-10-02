@@ -15,7 +15,8 @@ const QuestionItem = ({ question}) => {
                 </div>
             </div>
             <div className='question-item-div'>
-                <p>{question.title}</p>
+                <p className='p-right'>{question.title}</p>
+                <p className='p-right'>{question.body}</p>
                 <p className='gray-txt'>Created {timeAgo(question.created_at)} ago</p>
             </div>
         </li>

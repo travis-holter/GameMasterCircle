@@ -60,10 +60,13 @@ class AllQuestionsIndex extends React.Component {
                                     zIndex: "50",
                                 },
                             }}
-                        >
-                            <Button variant="info" onClick={() => this.changeModal(false)}>
-                                Close
-                            </Button>
+                        >   
+                            <div className='modal-right'>
+                                <Button variant="info" 
+                                    onClick={() => this.changeModal(false)}>
+                                    Close
+                                </Button>
+                            </div>
                             <AskQuestion 
                                 currentUser={this.props.currentUser}
                                 createQuestion={this.props.createQuestion}
