@@ -21,6 +21,14 @@ The latest working version is hosted live on heroku. [Click here to check it out
 
 ![splash](https://user-images.githubusercontent.com/53350595/94932095-737e1d00-047d-11eb-897e-a57ceab2da54.png)
 
+Uses a .svg image, it was a challenge to implement but a hero image really makes a website stand out.
+
+# Fully funtional user auth with modals
+
+![image](https://user-images.githubusercontent.com/53350595/94932521-0d45ca00-047e-11eb-8ced-18f20d6a1300.png)
+
+Promts a user to sign in when trying to ask a question, includes a demo user account for quick access. 
+
 # README
 
 This README would normally document whatever steps are necessary to get the
