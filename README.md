@@ -21,11 +21,12 @@ The latest working version is hosted live on heroku. [Click here to check it out
 
 ![splash](https://user-images.githubusercontent.com/53350595/94932095-737e1d00-047d-11eb-897e-a57ceab2da54.png)
 
-Uses a .svg image, it was a challenge to implement but a hero image really makes a website stand out.
+Uses a .svg image, it was a challenge to implement but a hero image really makes a website stand out. Uses CSS stlying (especially use of flexbox) to make the page look like the model mebsite, along with jsx to keep the contents of the page organized.
 
 
 
-```import React from 'react';
+```
+import React from 'react';
 
 class Home extends React.Component {
     constructor(props){
@@ -75,36 +76,15 @@ class Home extends React.Component {
 
 }
 
-export default Home;```
-
+export default Home;
+```
 
 # Fully funtional user auth with modals
 
 ![image](https://user-images.githubusercontent.com/53350595/94932521-0d45ca00-047e-11eb-8ced-18f20d6a1300.png)
 
-Promts a user to sign in when trying to ask a question, includes a demo user account for quick access. Uses CSS stlying (especially use of flexbox) to make the page look like the model mebsite, along with jsx to keep the contents of the page organized.
+Promts a user to sign in when trying to ask a question, includes a demo user account for quick access. 
 
-# README
+# Future functinality
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+As I continue to work on this project, the site will give users the ability to ask questions and upvote/downvote questions and answers. 
