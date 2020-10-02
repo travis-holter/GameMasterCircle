@@ -23,11 +23,66 @@ The latest working version is hosted live on heroku. [Click here to check it out
 
 Uses a .svg image, it was a challenge to implement but a hero image really makes a website stand out.
 
+
+
+```import React from 'react';
+
+class Home extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            username: "demo",
+            password: "demo12",
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    };
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.props.processForm(this.state)
+        .then(() => this.props.history.push('./questions'));
+    }
+
+    handleClick(e) {
+        e.preventDefault();
+        this.props.history.push('/questions');
+    }
+
+    render() {
+        return (
+        <div className="home">
+            <h1></h1>
+            <img
+                className="background-img"
+                src={window.heroURL}
+            />
+            <div className="welcome-msg">
+                <h1 className="home-txt-big">We {'<'}3 people who run games!</h1>
+                <p className="home-txt-small">We help game masters connect to share resources and wisdom.</p>
+                <div className="welcome-btn-div">
+                    <button className="demo-btn"
+                            onClick={this.handleSubmit}
+                    >Log in as a demo user</button>
+                    <button className="questions-btn"
+                        onClick={this.handleClick}
+                    >Look at questions</button>
+                </div>
+            </div>
+        </div>
+        )
+}
+
+}
+
+export default Home;```
+
+
 # Fully funtional user auth with modals
 
 ![image](https://user-images.githubusercontent.com/53350595/94932521-0d45ca00-047e-11eb-8ced-18f20d6a1300.png)
 
-Promts a user to sign in when trying to ask a question, includes a demo user account for quick access. 
+Promts a user to sign in when trying to ask a question, includes a demo user account for quick access. Uses CSS stlying (especially use of flexbox) to make the page look like the model mebsite, along with jsx to keep the contents of the page organized.
 
 # README
 
