@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { formatDate, timeAgo } from '../../utils/date_util';
 
 const QuestionItem = ({ question}) => {
@@ -15,7 +16,8 @@ const QuestionItem = ({ question}) => {
                 </div>
             </div>
             <div className='question-item-div'>
-                <p className='p-right'>{question.title}</p>
+                <Link className='p-right' to={`/questions/${question.id}`}>{question.title}</Link>
+                {/* <p className='p-right'>{question.title}</p> */}
                 <p className='p-right'>{question.body}</p>
                 <p className='gray-txt'>Created {timeAgo(question.created_at)} ago</p>
             </div>

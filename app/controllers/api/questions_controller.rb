@@ -22,6 +22,11 @@ class Api::QuestionsController < ApplicationController
         end
     end
 
+    def self
+        @questions = Question.where(author_id: current_user.id)
+        render :self
+    end
+
     private
 
     def question_params
