@@ -42,7 +42,22 @@ class Home extends React.Component {
                     >Look at questions</button>
                 </div>
             </div>
+                <div className="splash-page-mid">
+                    <div className="mid-top">
+                        <h2 className="mid-title">For Table-Top players and Game Masters, built by Travis Holter</h2>
+                        <div className="orange-bar"></div>
+                        <div className="mid-text-container">
+                            <p className="mid-text">
+                                An application modeled after StackOverflow, Game Master Circle
+                                provides a platform for users to ask and answer eachothers
+                                questions about running games and is a gateway to a fun and 
+                                positive community.
+                            </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         )
 }
 
