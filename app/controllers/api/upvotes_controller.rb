@@ -27,7 +27,7 @@ class Api::UpvotesController < ApplicationController
         end
       end
     end
-
+    
   end
 
   def destroy
