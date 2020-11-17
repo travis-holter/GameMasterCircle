@@ -14,6 +14,24 @@ class User < ApplicationRecord
       class_name: :Question,
       dependent: :destroy
 
+    has_many :answers,
+      foreign_key: :author_id,
+      primary_key: :id,
+      class_name: :Answer,
+      dependent: :destroy
+
+    has_many :upvotes,
+      foreign_key: :user_id,
+      primary_key: :id,
+      class_name: :Upvote,
+      dependent: :destroy
+
+    has_many :downvotes,
+      foreign_key: :user_id,
+      primary_key: :id,
+      class_name: :Downvote,
+      dependent: :destroy
+
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     return nil unless user
