@@ -1,4 +1,7 @@
 import React from 'react';
+import { FiDatabase } from 'react-icons/fi';
+import { DiReact } from 'react-icons/di';
+import { AiOutlineMessage } from 'react-icons/ai';
 
 class Home extends React.Component {
     constructor(props){
@@ -42,17 +45,41 @@ class Home extends React.Component {
                     >Look at questions</button>
                 </div>
             </div>
-                <div className="splash-page-mid">
-                    <div className="mid-top">
-                        <h2 className="mid-title">For Table-Top players and Game Masters, built by Travis Holter</h2>
-                        <div className="orange-bar"></div>
-                        <div className="mid-text-container">
-                            <p className="mid-text">
-                                An application modeled after StackOverflow, Game Master Circle
-                                provides a platform for users to ask and answer eachothers
-                                questions about running games and is a gateway to a fun and 
-                                positive community.
+            <div className="splash-page-desc">
+                    <div className="splash-page-mid">
+                        <div className="mid-top">
+                            <h2 className="mid-title">For Table-Top players and Game Masters, built by Travis Holter</h2>
+                            <div className="orange-bar"></div>
+                            <div className="mid-text-container">
+                                <p className="mid-text">
+                                    An application modeled after StackOverflow, Game Master Circle
+                                    provides a platform for users to ask and answer eachothers
+                                    questions about running games and is a gateway to a fun and 
+                                    positive community.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="splash-bottom">
+                    <div className="splash-bottom-1">
+                        <DiReact className="symbol" />
+                        <p className="symbol-text">
+                            This App's frontend uses React, Redux,
+                            JavaScript and HTML/CSS
                             </p>
+                    </div>
+                    <div className="splash-bottom-2">
+                        <FiDatabase className="symbol" />
+                        <p className="symbol-text">
+                            This App's backend uses Ruby on Rails, jBuilder, AJAX, JSON, and PostgreSQL.
+                        </p>
+                    </div>
+                    <div className="splash-bottom-3">
+                        <AiOutlineMessage className="symbol" />
+                        <p className="symbol-text">
+                            Users can create, update, edit and delte their own questions 
+                            and answers, as well as answer other users questions. 
+                        </p>
                     </div>
                 </div>
             </div>
