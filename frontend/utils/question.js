@@ -20,3 +20,18 @@ export const createQuestion = (question) => {
         data: { question }
     })
 };
+
+export const updateQuestion = (question) => (
+    $.ajax({
+        method: 'PATCH',
+        url: `/api/questions/${question.id}`,
+        data: { question }
+    })
+);
+
+export const deleteQuestion = (questionId) => (
+    $.ajax({
+        method: 'DELETE',
+        url: `/api/questions/${questionId}`
+    })
+);

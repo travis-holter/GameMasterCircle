@@ -28,5 +28,9 @@ questions = Question.create!([
 ])
 
 answers = Answer.create!([
-    
+    {author_id: 2, question_id: 1, body: "They will definately just make mayonaise, bad idea."},
+    {author_id: 1, question_id: 2, body: "Wow, that is an interesting question, and it certainly isn't a real problem I have had to deal with. Maybe just ignore it and hope it goes away!"},
+    {author_id: 3, question_id: 6, body: "I am going to hire Travis today!"},
+    {author_id: 4, question_id: 3, body: "The real question is, can a fish answer it's own question?"},
+    {author_id: 1, question_id: 3, body: "You have taught me much about life, thank you sir."}
 ])
