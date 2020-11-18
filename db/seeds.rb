@@ -25,6 +25,8 @@ questions = Question.create!([
     {title: "Ok, what does everyone think of my new world?", body: "I call it Mistworld! It was weight-lifting bro-raptors, and it is generally insane. Also my main villiage is named 'Karaoke Villiage', a lot of creativity went into it. ", author_id: 1},
     {title: "Bro, do you even practice voices?", body: "My morning routine involves singing in the mirror. What do you do?", author_id: 2},
     {title: "Can Travis build awesome websites?", body: "Yes, yes he can. I think I will hire him right away :D", author_id: 3},
+])
 
-
+answers = Answer.create!([
+    
 ])
