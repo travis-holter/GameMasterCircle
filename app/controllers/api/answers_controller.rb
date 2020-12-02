@@ -27,20 +27,20 @@ class Api::AnswersController < ApplicationController
     if @answer.author_id == current_user.id && @answer.update(answer_params)
       render :show
     else
-      render json: ['Answer cannot be updated'], status: 422
+      render json: ['Cannot update answer :('], status: 422
     end
   end
 
   def destroy
     @answer = Answer.find_by(id: params[:id])
     if @answer.nil?
-      render json: ['Answer cannot be found'], status: 422
+      render json: ['Cannot find answer :('], status: 422
     else
       if current_user.id == @answer.author_id 
         @answer.destroy!
         render :show
       else
-        render json: ['Answer cannot be deleted'], status: 422
+        render json: ['Cannot delete answer :('], status: 422
       end
     end
   end

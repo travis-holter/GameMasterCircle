@@ -41,7 +41,7 @@ class AllQuestionsIndex extends React.Component {
                             </Button>
                         </div>
                         <ul className='question-list'>
-                            {this.props.questions.map(question => {
+                            {this.props.questions.reverse().map(question => {
                                 return(
                                     <QuestionItem question={question}
                                     key={question.id}/>

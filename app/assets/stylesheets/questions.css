@@ -34,3 +34,80 @@
     list-style-type: none;
     
 }
+
+.q-wrapper {
+  margin: auto;
+}
+
+.edit-q-header {
+  text-align: center;
+}
+
+.edit-question-body {
+  margin-top: 10px;
+}
+
+.edit-q-title {
+  width: 100%;
+  height: 75px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  resize: none;
+}
+
+.edit-question-body-area {
+  resize: none;
+  height: 200px;
+  width: 100%;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+
+.q-container {
+  top: 50px;
+  left: 225px;
+  height: 90%;
+  width: 60%;
+  position: fixed;
+  padding-top: 20px;
+  overflow-y: auto;
+  margin-left: 20px;
+  -ms-overflow-style: none;
+}
+
+.q-container::-webkit-scrollbar {
+  display: none;
+}
+
+.q-title {
+  margin-top: 10px;
+}
+
+.q-body {
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+.a-div {
+    border-top: 1px solid #DEDEDE;
+}
+
+.back-btn {
+  margin-left: auto !important;
+}
+
+.edit-q-close {
+  float: right;
+}
+
+.q-container {
+left: 0px;
+width: 100%;
+}
+
+.q-vote-div {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

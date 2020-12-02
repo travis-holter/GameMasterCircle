@@ -4,7 +4,10 @@ import MainNav from './main_nav';
 import { logout } from '../../actions/session';
 
 const mSTP = state => ({
+    // currentUser: state.users[session.id]
     currentUser: state.session.currentUser,
+    // currentUser: state.entities.users[3],
+    // currentUser: users[session.id]
 });
 
 const mDTP = dispatch => ({

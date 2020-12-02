@@ -39,11 +39,11 @@ export const createQuestion = (question) => (dispatch) => {
 };
 
 export const updateQuestion = (question) => (dispatch) => (
-    QuestionApiUtil.updateQuestion(question)
+    APIUtil.updateQuestion(question)
         .then(updatedQuestion => dispatch(receiveQuestion(updatedQuestion)))
 );
 
 export const deleteQuestion = (questionId) => (dispatch) => (
-    QuestionApiUtil.deleteQuestion(questionId)
+    APIUtil.deleteQuestion(questionId)
         .then(() => dispatch(removeQuestion(questionId)))
 );

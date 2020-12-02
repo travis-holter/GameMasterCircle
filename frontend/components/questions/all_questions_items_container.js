@@ -5,7 +5,7 @@ import AllQuestionsIndex from './all_questions_index';
 
 const mSTP = state => ({
     questions: Object.values(state.entities.questions), 
-    currentUser: state.entities.users[state.session.id]
+    currentUser: state.session.currentUser
 })
 
 const mDTP = dispatch => ({

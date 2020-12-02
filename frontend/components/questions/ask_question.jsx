@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from 'react-modal';
 
 class AskQuestion extends React.Component {
     constructor(props){
@@ -6,14 +7,21 @@ class AskQuestion extends React.Component {
         this.state = {
             title: "",
             body: "",
+            modal: false,
         }
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.changeModal = this.changeModal.bind(this);
+
     }
 
     update(field) {
         return e => {
             this.setState({ [field]: e.currentTarget.value });
         }
+    }
+
+    changeModal(status) {
+        this.setState({ modal: status });
     }
 
     handleSubmit() {

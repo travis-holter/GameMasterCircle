@@ -1,0 +1,55 @@
+#up-q-vote {
+  font-size: 50px;
+  color: lightgray;
+}
+
+#up-q-vote:hover {
+  cursor: pointer;
+}
+
+#down-q-vote {
+  font-size: 50px;
+  color: lightgray;
+}
+
+#down-q-vote:hover {
+  cursor: pointer;
+}
+
+#up-a-vote {
+  font-size: 50px;
+  color: lightgray;
+}
+
+#up-a-vote:hover {
+  cursor: pointer;
+}
+
+#down-a-vote {
+  font-size: 50px;
+  color: lightgray;
+}
+
+#down-a-vote:hover {
+  cursor: pointer;
+}
+
+.votes {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+.all-votes {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.a-vote {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.a-votes-container {
+  display: flex;
+  margin: 10px 2px 10px 2px;
+} 

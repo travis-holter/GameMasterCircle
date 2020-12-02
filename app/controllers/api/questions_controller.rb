@@ -1,6 +1,6 @@
 class Api::QuestionsController < ApplicationController
 
-    before_action :require_logged_in, only: [:create]
+    before_action :require_logged_in, only: [:create, :update, :destroy]
 
     def index
         @questions = Question.all
@@ -26,6 +26,29 @@ class Api::QuestionsController < ApplicationController
         @questions = Question.where(author_id: current_user.id)
         render :self
     end
+
+  def update
+    @question = Question.find_by(id: params[:id])
+    if @question.author_id == current_user.id && @question.update(question_params)
+      render :show
+    else
+      render json: ['Cannot update question :('], status: 422
+    end
+  end
+
+  def destroy
+    @question = Question.find_by(id: params[:id])
+    if @question.nil?
+      render json: ['Cannot find question :('], status: 422
+    else
+      if current_user.id == @question.author_id
+        @question.destroy
+        render :show
+      else
+        render json: ['Cannot delete question :('], status: 422
+      end
+    end
+  end
 
     private
 

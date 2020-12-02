@@ -1,7 +1,10 @@
 import {
     RECEIVE_ALL_QUESTIONS,
-    RECEIVE_QUESTION
+    RECEIVE_QUESTION,
+    REMOVE_QUESTION,
 } from '../actions/question';
+import { UPDATE_DOWNVOTE } from '../actions/downvote';
+import { UPDATE_UPVOTE } from '../actions/upvote';
 
 const QuestionReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
