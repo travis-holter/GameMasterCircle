@@ -74,12 +74,25 @@ h1 {
     flex-direction: column;
     border-radius: 3px;
     padding: 10px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    position: absolute;
+    /* top: -300px; */
+    top: 175px;
+    left: 10vw;
+
+    /* transform: translate(-50%, -50%); */
     text-align: center;
     align-items: center;
+    z-index: 1;
+}
+
+.background-image {
+  position: absolute;
+}
+
+.home {
+  z-index: 0;
+  /* position: relative; */
 }
 
 .home-txt-big {
@@ -92,7 +105,7 @@ h1 {
     /* position: absolute; */
 }
 
-.splash-page-mid {
+.sp-bottom {
   top: 500px;
   width: 100%;
   height: 800px;
@@ -101,6 +114,15 @@ h1 {
   overflow-x: hidden;
   padding-top: 20px;
   text-align: center; 
+  display: flex;
+  justify-content: center;
+}
+
+.sp-mid {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
 }
 
 .mid-top {
@@ -131,35 +153,31 @@ h1 {
   padding-top: 15px;
 }
 
-.splash-page-desc {
+.sp-container {
   top: 500px;
   width: 100%;
   height: 800px;
   position: absolute;
   background-color: whitesmoke;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 20px;
   text-align: center;
   
 }
 
-.splash-bottom {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-}
 
-.splash-bottom-1 {
+
+.sp-bottom-1 {
   height: 400px;
   width: 325px;
-  align-self: flex-end;
   border-radius: 5px;
   box-shadow: 5px 10px 20px #888888;
   
 }
 
-.splash-bottom-2 {
+.sp-bottom-2 {
+  position: relative;
+  top: 50px;
   height: 400px;
   width: 325px;
   margin: 0px 80px 0px 80px;
@@ -167,20 +185,19 @@ h1 {
   box-shadow: 5px 10px 20px #888888;
 }
 
-.splash-bottom-3 {
+.sp-bottom-3 {
   height: 400px;
   width: 325px;
-  align-self: flex-end;
   border-radius: 5px;
   box-shadow: 5px 10px 20px #888888;
 }
 
-.symbol {
+.graphic {
   font-size: 100px;
   margin: 40px 20px 15px 20px;
 }
 
-.symbol-text {
+.gaphic-text {
   font-family: din-medium;
   font-size: 18px;
   margin: 20px;
