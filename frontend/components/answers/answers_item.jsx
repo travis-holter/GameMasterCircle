@@ -35,7 +35,7 @@ const AnswerItem = ({ answer, deleteAnswer, updateAnswer, currentUser, questionI
                                     />
                                     <p className="a-body">{answer.body}</p>
                                 </div>
-                                <div className="btn">
+                                <div >
                                     <Button onClick={() => {
                                         ReactGA.event({
                                             category: "Delete Answer",

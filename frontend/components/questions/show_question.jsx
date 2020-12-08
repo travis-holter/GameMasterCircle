@@ -80,13 +80,14 @@ class ShowQuestion extends React.Component {
         }
 
         return (
-            <div>
-                <SideBarContainer />
-                <Link to='/questions'>
-                    <Button variant='warning'
-                        className='btn'
-                    > Back to Questions Index
-                    </Button>
+            <div className="q-show-page">
+                {/* <SideBarContainer /> */}
+                <div>
+                <Link to='/questions'
+                        className='btn-back'
+                        // id="back"
+                     >Back to Questions Index
+                  
                 </Link>
                 <div className="q-container">
                     <div className="q-title-div">
@@ -102,6 +103,7 @@ class ShowQuestion extends React.Component {
                     <div className="a-div">
                         <AnswerIndexComponent questionId={this.props.questionId} />
                     </div>
+                </div>
                 </div>
                 <Modal
                     isOpen={this.state.modalIsOpen}
